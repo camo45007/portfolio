@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes float {
+  0% {
+    opacity: 0;
+    transform: translate(0, 80px);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translate(3px, 20px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(-3px, -60px);
+  }
+
+  75% {
+    opacity: 0.6;
+    transform: translate(3px, -130px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-2px, -200px);
+  }
+}
+
+.float {
+  animation-name: float;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 1.8s ease-out forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.15s;
+}
+
+.delay-2 {
+  animation-delay: 0.30s;
+}
+
+.delay-3 {
+  animation-delay: 0.45s;
+}
+
+.delay-4 {
+  animation-delay: 0.60s;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    linear-gradient(to right, rgba(0, 0, 0, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+
+  background-size:
+    100% 100%,
+    75px 75px,
+    75px 75px;
+}
