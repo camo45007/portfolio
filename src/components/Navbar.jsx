@@ -6,7 +6,7 @@ function Navbar() {
         <a
           href="#"
           className="text-lg font-bold tracking-tight text-white">
-          (◠﹏◠)
+            Cameron Gleed
         </a>
 
         <div className="flex gap-8 text-sm font-medium text-white">

@@ -36,10 +36,6 @@ function Skills() {
           <SkillCard icon={Photoshop} />
           <SkillCard icon={Illustrator} />
           <SkillCard icon={AfterEffects} />
-          <SkillCard icon={OpenaiChatgpt} />
-          <SkillCard icon={Cursor} />
-          <SkillCard icon={ClaudeCode} />
-          <SkillCard icon={GeminiGoogle} />
         </div>
       </div>
     </section>
