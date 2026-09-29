@@ -1,4 +1,4 @@
-import { React, TailwindCss, Nodejs, Typescript, Javascript, Firebase, Firestore } from '@thesvg/react'
+import { React, TailwindCss, Nodejs, Typescript, Javascript, Firebase, Firestore, Electron, Vite } from '@thesvg/react'
 
 function Projects() {
     return (
@@ -11,13 +11,17 @@ function Projects() {
                     🎯 My Projects
                 </h2>
 
-                <div className="mt-12 grid gap-6 md:grid-cols-3">
-                    <div className="flex h-full flex-col">
+                <div className="mt-12 grid items-stretch gap-6 md:grid-cols-3">
+                    <div className="flex flex-col">
                         <div className="h-80 overflow-hidden rounded-2xl border border-zinc-800">
-                            <img
-                                src="public\mytimetablethumb.gif"
-                                alt="MyTimetable Preview"
-                                className="h-full w-full scale-110 object-cover"
+                            <video
+                                src="/MTthumbnail.mp4"
+                                aria-label="MyTimetable Preview"
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                className="h-full w-full scale-120 object-cover"
                             />
                         </div>
 
@@ -29,16 +33,18 @@ function Projects() {
                             A rework of the Bournemouth University timetable, built to solve inclusivity and accessibility issues.
                         </p>
 
-                        <div className="mt-4 flex w-fit items-center gap-3 rounded-lg bg-zinc-950 px-3 py-2">
-                            <TailwindCss className="h-4 w-4"/>
-                            <React className="h-4 w-4" />
-                            <Nodejs className="h-4 w-4" />
-                            <Typescript className="h-4 w-4" />
-                            <Javascript className="h-4 w-4" />
-                            <Firebase className="h-4 w-4" />
-                            <Firestore className="h-4 w-4" />
-                        </div>
                         <div className="mt-auto pt-4">
+                            <div className="flex w-fit items-center gap-3 rounded-lg bg-zinc-950 px-3 py-2">
+                                <TailwindCss className="h-4 w-4"/>
+                                <React className="h-4 w-4" />
+                                <Nodejs className="h-4 w-4" />
+                                <Typescript className="h-4 w-4" />
+                                <Javascript className="h-4 w-4" />
+                                <Firebase className="h-4 w-4" />
+                                <Firestore className="h-4 w-4" />
+                            </div>
+                        </div>
+                        <div className="pt-4">
                             <a
                                 href="https://my-timetable-flame.vercel.app/login"
                                 target="blank"
@@ -51,18 +57,38 @@ function Projects() {
 
                     </div>
 
-                    <div className="flex h-full flex-col">
-                        <div className="h-80 rounded-2xl border border-zinc-800">
-                        </div>
+                    <div className="flex flex-col">
+                            <div className="h-80 overflow-hidden rounded-2xl border border-zinc-800">
+                                <video
+                                    src="/SimpleScreenerPreview.mp4"
+                                    aria-label="SimpleScreener Preview"
+                                    autoPlay
+                                    muted
+                                    loop
+                                    playsInline
+                                    className="h-full w-full scale-100 object-cover"
+                                />
+                            </div>
 
                         <h3 className="text-xl font-semibold mt-4">
-                            Newhi
+                            SimpleScreener
                         </h3>
 
                         <p className="mt-2 text-zinc-400">
-                            WORK IN PROGRESS.
+                            A simple stock screener for the FTSE100, built for both macOS and Windows to provide an easy way to analyse stocks.
                         </p>
                         <div className="mt-auto pt-4">
+                            <div className="flex w-fit items-center gap-3 rounded-lg bg-zinc-950 px-3 py-2">
+                                <TailwindCss className="h-4 w-4"/>
+                                <React className="h-4 w-4" />
+                                <Nodejs className="h-4 w-4" />
+                                <Typescript className="h-4 w-4" />
+                                <Javascript className="h-4 w-4" />
+                                <Electron className="h-4 w-4" />
+                                <Vite className="h-4 w-4" />
+                            </div>
+                        </div>
+                        <div className="pt-4">
                             <a
                                 href="#"
                                 className="mt-auto inline-block text-blue-400 hover:text-blue-300"
@@ -72,7 +98,7 @@ function Projects() {
                         </div>
                     </div>
 
-                    <div className="flex h-full flex-col">
+                    <div className="flex flex-col">
                         <div className="h-80 rounded-2xl border border-zinc-800">
                         </div>
 
